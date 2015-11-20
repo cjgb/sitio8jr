@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+
+    <title>VII Jornadas de Usuarios de R</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Leaflet-->
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-play-circle"></i>  <span class="light">Inicio</span>
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li> <a class="page-scroll" href="#presentacion">Presentación</a> </li>
+                    <li> <a class="page-scroll" href="#asiste">Asiste</a> </li>
+                    <li> <a class="page-scroll" href="#programa">Programa</a> </li>
+                    <li> <a class="page-scroll" href="#organizacion">Organización</a> </li>
+                    <li> <a class="page-scroll" href="#patrocinadores">Patrocinadores</a> </li>
+                    <li> <a class="page-scroll" href="#contacto">Contacta</a> </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">VII Jornadas de Usuarios de R</h1>
+                        <p class="intro-text">Salamanca, 5 y 6 de noviembre de 2015</p>
+                        <a href="#presentacion" class="btn btn-circle page-scroll"> <i class="fa fa-angle-double-down animated"></i> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="presentacion" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>VII Jornadas de Usuarios de R</h2>
+		<h4>Salamanca, 5 y 6 de noviembre de 2015</h4>
+		<h4>Hospedería Arzobispo Fonseca - Sala menor</h4>
+			<p> Las jornadas son el reflejo de la importancia creciente de R. Están abiertas a usuarios y entusiastas de R independientemente de su filiación o área de interés. Buscan, además, fomentar las relaciones sociales entre los usuarios de R. </p> 
+
+		<div class="row">
+		  <div class="col-md-6">
+		 <h4>Objetivo</h4> 
+			    <ul>
+				<li>Proporcionar un punto de encuentro a los usuarios de R</li>
+				<li>Fomentar la colaboración entre ellos en un ambiente multidisciplinar</li>
+				<li>Divulgar el conocimiento del lenguaje y sus posibilidades</li>
+				<li>Promover el uso de R</li>
+			    </ul>
+		  </div>
+		  <div class="col-md-6"> 
+			    <h4>Formato</h4>
+			    <ul>
+				<li>Ponencias invitadas
+				<li>Presentaciones de usuarios de R que reflejen en amplio rango de en que se está usando R para analizar datos</li>
+				<li>Sesiones de pósters</li>
+				<li>Tutoriales que profundizan en aspectos interesantes y menos conocidos de R</li>
+			    </ul>
+		  </div>
+		</div>
+
+                        <a href="#asiste" class="btn btn-circle page-scroll" style="border: 4px solid black !important;color:black"> <i class="fa fa-angle-double-down fa-inverse animated" style='color: black;'></i> </a>
+
+		</div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="asiste" class="content-section text-center">
+        <div class="download-section">
+
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>¿Quieres asistir?</h2>
+
+			<a href="http://www.eventbrite.es/e/entradas-vii-jornadas-de-usuarios-de-r-16269024089?ref=ebtn" target="_blank"><img src="https://www.eventbrite.es/custombutton?eid=16269024089" alt="Eventbrite - VII Jornadas de Usuarios de R" /></a>
+			</br>
+
+                    (La asistencia es <b>gratuita</b>, sin embargo, el espacio es limitado. No te registres si tienes serias dudas acerca de la posibilidad de que puedas asistir finalmente).
+
+			<p></p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>Alojamiento</h4>
+    			             <p>La organización ha negociado una tarifa especial (50€ habitación doble; 45€ habitación individual; IVA y desayuno incluidos) en el <a href="http://www.gran-hotelcoronasol.es/" target="blank">hotel Gran Corona Sol</a>. Las reservas han de efectuarse antes del 4 de octubre indicando la asistencia a las Jornadas.</p>
+                        </div>
+
+                        <div class="col-md-6">
+                            <h4>Cena social</h4>
+    			             <p>El jueves 5 de noviembre (22:30) cenaremos en el <a href="http://www.tripadvisor.es/Restaurant_Review-g187493-d998371-Reviews-Orquidea-Salamanca_Province_of_Salamanca_Castile_and_Leon.html">Restaurante Orquídea</a> (<a href="pdf/cena_social.pdf">más información</a>). El precio es de 20€, que se abonarán cuando llegues a las jornadas. <a href="http://goo.gl/forms/w0lUaVakgr">¡Haz tu reserva!</a></p>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>Visita guiada</h4>
+    			             <p>El jueves día 5 entre las 20:15 y las 21:45 habrá una visita guiada por el centro de Salamanca.</p>
+
+                        </div>
+                        <!-- <div class="col-md-6">
+                            <h4>Excursión a las Batuecas</h4>
+    			             <p>El sábado día 7 de noviembre, de 9:00 a 18:30, se realizará una excursión a <a href="https://es.wikipedia.org/wiki/Las_Batuecas">Las Batuecas</a> y la <a href="https://es.wikipedia.org/wiki/Sierra_de_Francia">sierra de Francia</a>. Tiene un coste de 32€, comida incluida. Más información, (incluida la forma de realizar el pago) <a href="pdf/excursionJR7.pdf">aquí</a>.</p>
+
+                        </div> -->
+
+                        <div class="col-md-6">
+                            <h4>Asistencia remota</h4>
+    			             <p>Las jornadas se grabarán y retransmitirán por <i>streaming</i> (<a href="https://telefonica.webex.com/telefonica/j.php?MTID=m57c17b70ffdaaba7b229743f6cf2e875">sesión del jueves</a> y <a href="https://telefonica.webex.com/telefonica/j.php?MTID=m077a0111d624b18c2c1cf1f48b6e18a1">sesión del viernes</a>).</p>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+	    <a href="#programa" class="btn btn-circle page-scroll" style="border: 4px solid white !important;color:white">
+	      <i class="fa fa-angle-double-down fa-inverse animated" style='color: white;'></i> </a>
+        <br>&nbsp;
+        </div>    
+    
+    </section>
+
+    <!-- Contact Section -->
+    <section id="programa" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Programa</h2>
+
+                <p>(Descarga en <a href="pdf/programa_vii_jornadas_r.pdf"><b>PDF</b></a>)</p>
+                
+                
+            </div>    
+            <div class="row">
+            <div class="col-lg-12" >
+                
+                <table class="table table-striped table-bordered table-hover">
+                     <tbody>
+                     <tr height="32" >
+                      
+                      <td colspan="3" class="titulo1">Jueves, 5 de Noviembre</td>
+                     </tr>
+                     <tr  height="32" >
+                      
+                      <td >08:30-09:00</td>
+                      <td colspan="2"  width="1026" class="titulo">Entrega de documentación y acreditación</td>
+                     </tr>
+                     <tr  height="32" >
+                      
+                      <td  >09:00-09:30</td>
+                      <td colspan="2"  width="1026" class="titulo">Inauguración oficial de las jornadas</td>
+                     </tr>
+                     <tr  height="32" >
+                      
+                      <td  >09:30-10:30</td>
+                      <td colspan="2"  width="1026" class="titulo">Comunicaciones I – Aplicaciones.<span >&nbsp; </span>Moderador: Carlos J. Gil Bellosta</td>
+                     </tr>
+                     <tr height="57" >
+                      
+                      <td  >&nbsp;</td>
+                      <td  width="513" ><a href="ponencias/marcos_fernandez_arias.zip">Utilizando R en la vida diaria: comprar un coche</a></td>
+                      <td  width="513" >Marcos Fernández Arias (Xunta de Galicia)</td>
+                     </tr>
+                     <tr height="57" >
+                      
+                      <td  >&nbsp;</td>
+                      <td  width="513" >Redes bayesianas con R aplicadas a modelos de transporte</td>
+                      <td  width="513" >Miguel Ángel Gómez-Villegas, Beatriz González-Pérez, Óscar De Gregorio-Vicente (Universidad Complutense de Madrid), Diego Crespo-Pereira (Universidad da Coruña)</td>
+                     </tr>
+                     <tr height="57" >
+                      
+                      <td  >&nbsp;</td>
+                      <td  width="513" >Movilidad saludable en la ciudad</td>
+                      <td  width="513" >Pavel Llamocca Portella, Victoria López (Universidad Complutense de Madrid)</td>
+                     </tr>
+                     <tr height="57" >
+                      
+                      <td  >&nbsp;</td>
+                      <td  width="513" ><a href="ponencias/teresa_gonzalez_arteaga.pdf">Enseñando R en el Grado en Estadística</a></td>
+                      <td  width="513" >Teresa Gonzalez Arteaga (Universidad de Valladolid)</td>
+                     </tr>
+                     <tr  height="32" >
+                      
+                      <td  >10:30- 11:00</td>
+                      <td colspan="2"  width="1026" class="titulo" >Pausa para el café</td>
+                     </tr>
+                     <tr  height="32" >
+                      
+                      <td  >11:00-14:00</td>
+                      <td colspan="2"  width="1026" class="titulo">Talleres paralelos I</td>
+                     </tr>
+                     <tr height="61" >
+                      
+                      <td  >&nbsp;</td>
+                      <td  width="513" >SparkR (R on Spark)<br> <a class="small" href="https://github.com/jayusor/taller_SparkR">Instrucciones del taller</a></td>
+                      <td  width="513" >Jorge Ayuso Rejas (Telefónica)</td>
+                     </tr>
+                     <tr height="61" >
+                      
+                      <td  >&nbsp;</td>
+                      <td  width="513"><a href="ponencias/david_molina.pdf">Análisis de encuestas con datos provenientes de teléfonos fijos y teléfonos móviles</a></td>
+                      <td  width="513">David Molina Muñoz, Antonio Arcos Cebrián, María del Mar Rueda García, Maria Giovanna Ranalli (Universidad de Granada)</td>
+                     </tr>
+                     <tr  height="32" >
+                      
+                      <td  >16:00-17:30</td>
+                      <td colspan="2"  width="1026" class="titulo">Comunicaciones II - Interfaces y Minería de Texto. Moderador: Javier Martínez Elícegui</td>
+                     </tr>
+                     <tr height="52" >
+                      
+                      <td  >&nbsp;</td>
+                      <td  width="513" >R para divertirse</td>
+                      <td  width="513" >Antonio Sánchez Chinchón (Telefónica)</td>
+                     </tr>
+                     <tr height="52" >
+                      
+                      <td  >&nbsp;</td>
+                      <td  width="513" ><a href="ponencias/jaime_egido.pptx">¿Necesitamos un interfaz gráfico de usuario en R?</a></td>
+                      <td  width="513" >Jaime Egido Miguélez (Universidad de Salamanca)</td>
+                     </tr>
+                     <tr height="52" >
+                      
+                      <td  >&nbsp;</td>
+                      <td  width="513"><a href="ponencias/juan_arevalo.pdf">Desarrollo de interfaces gráficas para librerías de R: OpenCPU y la librería spdynmod</a></td>
+                      <td  width="513">Juan Arevalo (Randbee Consultants), Javier Martínez-López (Universidad de Murcia)</td>
+                     </tr>
+                     <tr height="52" >
+                      
+                      <td  >&nbsp;</td>
+                      <td  width="513" ><a href="ponencias/sergio_contador_pachon.pdf">Clasificación de textos científicos con R</a> (<a href="https://github.com/scontador/Clasificacion_Textos_Cientificos_R">código</a>)</td>
+                      <td  width="513" >Sergio Contador Pachon, Mohamed Kriem, Jose M. Velasco, Juan Lanchares (Universidad Complutense de Madrid)</td>
+                     </tr>
+                     <tr height="52" >
+                      
+                      <td  >&nbsp;</td>
+                      <td  width="513" ><a href="ponencias/christian_gonzalez.pdf">Frecuencias de búsquedas en Wikipedia como estrategia de inversión en el IBEX35</a></td>
+                      <td  width="513" >Christian González Martel, Jaime Pinilla Domínguez (Universidad de Las Palmas de Gran Canaria)</td>
+                     </tr>
+                     <tr height="52" >
+                      
+                      <td  >&nbsp;</td>
+                      <td  width="513"><a href="ponencias/m_escobar.pdf">Análisis de coincidencias mediante web con R-shiny</a></td>
+                      <td  width="513">Modesto Escobar Mercado, Luis Martínez Uribe, Fernando Martínez, José L. Alonso Berrocal (Universidad de Salamanca)</td>
+                     </tr>
+                     <tr  height="32" >
+                      
+                      <td  >17:45-19:00</td>
+                      <td colspan="2"  width="1026" class="titulo">Comunicaciones III - Métodos Estadísticos. Moderador:<span >&nbsp;
+                      </span>Emilio Torres Manzanera</td>
+                     </tr>
+                     <tr height="52" >
+                      
+                      <td  >&nbsp;</td>
+                      <td  width="513" ><a href="ponencias/borja_santos_zorrozua.pdf">Review Manager + R: la combinación perfecta para presentar los resultados de un metanálisis</a></td>
+                      <td  width="513" >Borja Santos Zorrozúa, Eduardo González Fraile, Virginia Guillén Cañas y Francisco Javier Ballesteros Rodríguez (Universidad del País Vasco)</td>
+                     </tr>
+                     <tr height="52" >
+                      
+                      <td  >&nbsp;</td>
+                      <td  width="513"><a href="ponencias/vicente_villardon.pdf">MultBiplotR: Multivariate Analysis using biplots in R</a></td>
+                      <td  width="513">José Luis Vicente Villardón (Universidad de Salamanca)</td>
+                     </tr>
+                     <tr height="52" >
+                      
+                      <td  >&nbsp;</td>
+                      <td  width="513" ><a href="ponencias/d_salmeron.pdf">Reduciendo el error Monte Carlo en la estimación bayesiana de los riesgos relativos usando modelos de regresión binomial</a></td>
+                      <td  width="513" >Diego Salmerón Martínez, Juan Antonio Cano Sánchez (Universidad de Murcia)</td>
+                     </tr>
+                     <tr height="52" >
+                      
+                      <td  >&nbsp;</td>
+                      <td  width="513" ><a href="ponencias/dolores_ferrer_castan.pdf">Técnicas y paquetes de R para la evaluación o diagnóstico de modelos de regresión</a></td>
+                      <td  width="513" >Dolores Ferrer-Castán (U. de Salamanca), Jennifer Morales Barbero (U. de Salamanca), Ole R. Vetaas (U. de Bergen, Noruega)</td>
+                     </tr>
+                     <tr height="52" >
+                      
+                      <td  >&nbsp;</td>
+                      <td  width="513"><a href="ponencias/julia_vega.pdf">Cómo enfrentarse a datos complejos. Introducción al análisis multivariante: técnicas básicas de ordenación y clasificación en R</a></td>
+                      <td  width="513">Julia Vega Álvarez, Jennifer Morales Barbero (Universidad de Salamanca)</td>
+                     </tr>
+                     <tr  height="32" >
+                      
+                      <td  >19:00-20:00</td>
+                      <td colspan="2"  width="1026" class="titulo">Asamblea Comunidad R-Hispano</td>
+                     </tr>
+                     <tr  height="32" >
+                      
+                      <td  >20:15-21:45</td>
+                      <td colspan="2"  width="1026" class="titulo">Visita guiada a Salamanca</td>
+                     </tr>
+                     <tr  height="32" >
+
+                      <td  >22:30</td>
+                      <td colspan="2"  width="1026" class="titulo">Cena social (no olvides reservar)</td>
+                     </tr>
+
+                     <tr height="80" class="en_blanco" >
+                        <td colspan="3" ></td>
+                     </tr>
+
+                     <tr height="32" >
+                      
+                      <td ></td>
+                      <td colspan="2" class="titulo1">Viernes, 6 de Noviembre</td>
+                     </tr>
+                     <tr  height="32" >
+                      
+                      <td >09:00-11:15</td>
+                      <td colspan="2"  width="1026" class="titulo">Comunicaciones IV - Bio/Eco Estadística. Moderador: Miguel Ángel Rodríguez Muíños</td>
+                     </tr>
+                     <tr height="82" >
+                      
+                      <td  >&nbsp;</td>
+                      <td  width="513"><a href="ponencias/carlos_prieto.pdf">Creación de gráficos interactivos en R: aplicación al análisis de datos genómicos de Gliomas</a></td>
+                      <td  width="513">Carlos Prieto Sánchez, David Barrios, Álvaro Otero, María González-Tablas, María Jara-Acevedo, Jesús Maria Gonçalves, Alberto Orfao, María Dolores Tabernero (Universidad de Salamanca)</td>
+                     </tr>
+                     <tr height="82" >
+                      
+                      <td  >&nbsp;</td>
+                      <td  width="513"><a href="ponencias/jennifer_morales.pptx">Comparación de técnicas para la obtención de modelos de distribución de especies con R</a></td>
+                      <td  width="513">Jennifer Morales-Barbero, Dolores Ferrer-Castán (Universidad de Salamanca)</td>
+                     </tr>
+                     <tr height="82" >
+                      
+                      <td  >&nbsp;</td>
+                      <td  width="513"><a href="ponencias/rafael_rios.pdf">Aplicación de LASSO en modelos mixtos. Un enfoque bayesiano</a></td>
+                      <td  width="513">David Hervás Marín, Rafael Ríos García, Elena Moreno Maestre, David Hervás Marín (Instituto de Investigación Sanitaria La Fe)</td>
+                     </tr>
+                     <tr height="82" >
+                      
+                      <td  >&nbsp;</td>
+                      <td  width="513"><a href="ponencias/julia_vega_2.pdf">Entendiendo la beta diversidad y su relación con los patrones de distribución espacial en ecología de comunidades. Aplicación de los paquetes betapart y BAT para R</a></td>
+                      <td  width="513">Julia Vega Álvarez (Universidad de Salamanca)</td>
+                     </tr>
+                     <tr height="82" >
+                      
+                      <td  >&nbsp;</td>
+                      <td  width="513" >R,
+                      visualización y bioinformática</td>
+                      <td  width="513" >Rodrigo
+                      Santamaría Vicente (Universidad de Salamanca)</td>
+                     </tr>
+                     <tr height="82" >
+                      
+                      <td  >&nbsp;</td>
+                      <td  width="513"><a href="ponencias/valverde_castilla.pdf">Técnicas Big Data en la optimización del problema de búsqueda de homologías en bases de batos biológicas</a></td>
+                      <td  width="513">Gabriel Antonio, Valverde Castillam, Beatriz González Pérez, Victoria López López (Universidad Complutense de Madrid)</td>
+                     </tr>
+                     <tr  height="32" >
+                      
+                      <td  >&nbsp;</td>
+                      <td  width="513"><a href="ponencias/karel_lopez.pdf">Price Sensitivity Meter (PSM) en R</a></td>
+                      <td  width="513">Karel López Quintero (Correos y Telégrafos)</td>
+                     </tr>
+                     <tr  height="32" >
+                      
+                      <td  >11:15-11:45</td>
+                      <td colspan="2"  width="1026" class="titulo">Pausa para el café</td>
+                     </tr>
+                     <tr  height="32" >
+                      
+                      <td  >11:45-14:00</td>
+                      <td colspan="2"  width="1026" class="titulo">Talleres
+                      paralelos II</td>
+                     </tr>
+                     <tr height="59" >
+                      
+                      <td  >&nbsp;</td>
+                      <td  width="513"><a href="ponencias/jesus_herranz.pdf">Análisis de Supervivencia con Datos de Alta Dimensionalidad</a></td>
+                      <td  width="513">Jesús Herranz Valera (Instituto IMDEA Alimentación)</td>
+                     </tr>
+                     <tr height="59" >
+                      
+                      <td  >&nbsp;</td>
+                      <td  width="513"><a href="ponencias/beatriz_cobo.pdf">Paquetes para el tratamiento de datos provenientes de encuestas aleatorizadas</a></td>
+                      <td  width="513">Beatriz Cobo (Universidad de Granada)</td>
+                     </tr>
+                     <tr  height="32" >
+                      
+                      <td  >16:00-19:00</td>
+                      <td colspan="2"  width="1026" class="titulo">Talleres Paralelos III</td>
+                     </tr>
+                     <tr height="32" >
+                      
+                      <td  >&nbsp;</td>
+                      <td  width="513"><a href="ponencias/pablo_haya.zip">Análisis de redes en R con el paquete igraph</a></td>
+                      <td  width="513">Pablo Haya Coll (Instituto de Ingeniería del Conocimiento, ADIC-IIC)</td>
+                     </tr>
+                     <tr height="32" >
+                      
+                      <td  >&nbsp;</td>
+                      <td  width="513" ><a href= "ponencias/jose_ignacio_casas.pdf">Bye, bye SPSS (y SAS): hola R para encuestas</a></td>
+                      <td  width="513" >José Ignacio Casas Álvarez (Jomial Research &amp; Consultants SL)</td>
+                     </tr>
+                     <tr  height="32" >
+                      
+                      <td  >19:00-19:20</td>
+                      <td colspan="2"  width="1026" class="titulo">Entrega del premio al mejor trabajo joven y clausura de las jornadas</td>
+                     </tr>
+
+
+                     <tr height="80" class="en_blanco" >
+                        <td colspan="3" ></td>
+                     </tr>
+
+                     <tr height="32" >
+                      <td ></td>
+                      <td colspan="2" class="titulo1">Sábado, 7 de Noviembre</td>
+                     </tr>
+                     <tr  height="32" >
+
+                      <td >09:00-18:30</td>
+                      <td colspan="2"  width="1026" class="titulo">Excursión a Las Batuecas y a la Sierra de Francia.</td>
+                     </tr>
+                     
+                    </tbody></table>
+                <br>&nbsp;
+            </div>    
+            </div>
+            
+            <div class="col-lg-8 col-lg-offset-2">
+                <h3>Premio al mejor trabajo presentado por un joven</h3>
+                <p>La Comunidad R Hispano desea propiciar el desarrollo de jóvenes talentos en el área de análisis de datos. Por ello organiza un concurso destinado a demostrar sus habilidades con R. Las bases del premio pueden consultarse <a href="pdf/concursojoven.pdf">aquí</a>.</p>
+                <p>El ganador del concurso ha sido <a href="https://www.linkedin.com/in/karellq">Karel López Quintero</a> con su trabajo <a href="http://r-es.org/7jornadasR/ponencias/karel_lopez.pdf">Price Sensitivity Meter (PSM) en R</a>.</p>
+
+                <a href="#organizacion" class="btn btn-circle page-scroll" style="border: 4px solid black !important;color:black"> <i class="fa fa-angle-double-down fa-inverse animated" style='color: black;'></i> </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Organización Section -->
+    <div class="black">
+        <section id="organizacion" class="container content-section text-center">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Organización</h2>
+
+            		<p>Las Jornadas no serían posibles sin la colaboración desinteresada de los integrantes de los comités organizador (encargado de las cuestiones de logísitica, etc.) y científico (que gestiona las ponencias, talleres, etc.).</p>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                        <h4>Comité organizador</h4>
+                            <ul>
+                                <li><a href="https://ecologicaconciencia.wordpress.com/">Dolores Ferrer Castán</a></li>
+                                <li><a href="http://www.datanalytics.com">Carlos J. Gil Bellosta</a></li>
+                                <li><a href="http://www.uclm.es/profesorado/vgomez/">Virgilio Gómez Rubio</a></li>
+                                <li>Javier Martínez Elicegui</li>
+                                <li>Carlos Prieto Sánchez</li>
+                                <li>María Dolores Tabernero</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                        <h4>Comité científico</h4>
+                            <ul>
+                                <li><a href="http://ligarto.org/rdiaz/">Ramón Díaz Uriarte</a></li>
+                                <li><a href="https://www.researchgate.net/profile/Luis_Esteban">Luis Mariano Esteban</a></li>
+                                <li><a href="http://www.mat.ucm.es/~villegas/info/bayesianos/index.html">Beatriz González Pérez</a></li>
+                                <li><a href="http://emilio.lcano.com/">Emilio López Cano</a></li>
+                                <li>Javier Martínez Elicegui</li>
+                                <li><a href="http://oscarperpinan.github.io">Óscar Perpiñán</a></li>
+                                <li><a href="http://es.linkedin.com/pub/miguel-%C3%A1ngel-rodr%C3%ADguez-mu%C3%AD%C3%B1os/26/198/96/en">Miguel Ángel Rodríguez Muinos</a></li>
+                                <li><a href="http://uce.uniovi.es/main.html">Emilio Torres Manzanera</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <a href="#patrocinadores" class="btn btn-circle page-scroll" style="border: 4px solid white !important;color:white !important"> <i class="fa fa-angle-double-down fa-inverse animated" style='color: white;'></i> </a>
+
+        </div>
+        </div>
+        </section>
+    </div>	
+
+
+    <!-- Patrocinadores Section -->
+    <section id="patrocinadores" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Patrocinadores</h2>
+
+	<p>Agradecemos la colaboración de nuestros patrocinadores, sin las que las jornadas no serían posibles. Además, tú (a título personal o a través de tu empresa o institución) también puedes convertirte en patrocinador de las Jornadas. Puedes consultar los detalles en <a href="pdf/patrocinios_jornadas.pdf">este documento</a>.</p>
+
+                <h3>Organizadores</h3>
+
+        <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-3 col-xs-4">
+		    	<a href="http://r-es.org"><img class="img-responsive center-block" src="img/logo_comunidad_r_hispano.png" alt="" style="height:70px;"/></a>
+		</div>
+                <div class="col-lg-6 col-md-6 col-sm-3 col-xs-4">
+                        <a href="https://utalenthub.usal.es/es"><img class="img-responsive center-block" src="img/talent_hub.png" alt="U-Talent-Hub" style="height:70px;" /></a>
+                </div>
+        </div>
+        <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-3 col-xs-4">
+                        <a href="https://pcs.usal.es/web/"><img class="img-responsive center-block" src="img/parque_cientifico.gif" alt="Parque Científico de la Universidad de Salamanca" style="height:150px;" /></a>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-3 col-xs-4">
+                        <a href="http://www.usal.es/"><img class="img-responsive center-block" src="img/usal.png" alt="Universidad de Salamanca" style="height:150px;" /></a>
+                </div>
+        </div>
+		
+		<p></p>
+		
+                <h3>Patrocinadores oro</h3>
+
+	<div class="row">
+		<div class="col-lg-6 col-md-6 col-sm-3 col-xs-4">
+			<a href="http://www.revolutionanalytics.com"><img class="img-responsive center-block" src="img/logo_revolution_analytics.jpg" alt="" style="height:80px;" /></a>
+		</div>
+		<div class="col-lg-6 col-md-6 col-sm-3 col-xs-4">
+			<a href="http://www.telefonica.com/"><img class="img-responsive center-block" src="img/telefonica.png" alt="Telefónica" style="height:120px;" /></a>
+		</div>
+			<a href="http://www.iic.uam.es/"><img class="img-responsive center-block" src="img/iic.png" alt="Instituto de Ingeniería del Conocimiento" style="height:120px;" /></a>
+	</div>
+
+		<p></p>
+
+                <h3>Patrocinadores plata</h3>
+		
+	<div class="row">
+		<a href="http://www.opensistemas.es"><img class="img-responsive center-block" src="img/logo_opensistemas.png" alt="" style="height:60px;" /></a>
+	</div>
+
+		<p></p>
+
+                <h3>Patrocinadores bronce</h3>
+
+
+        <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-3 col-xs-4">
+                       <a href="http://www.wiley.com/"><img class="img-responsive center-block" src="img/logo_wiley.gif" alt="wiley"    style="height:80px;" /></a>
+		</div>
+                <div class="col-lg-6 col-md-6 col-sm-3 col-xs-4">
+                       <a href="http://www.springer.com/"><img class="img-responsive center-block" src="img/logo_springer.png" alt="springer" style="height:80px;" /></a>
+                </div>
+        </div>
+        <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-3 col-xs-4">
+                       <a href="http://www.crcpress.com/"><img class="img-responsive center-block" src="img/logo_crc.png" alt="crc"      style="height:100px;" /></a>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-3 col-xs-4">
+                       <a href="http://www.datatons.com/"><img class="img-responsive center-block" src="img/logo_datatons.png" alt="datatons" style="height:100px;" /></a>
+                </div>
+        </div>
+		
+		<p></p>
+		
+
+                <h3>Patrocinadores individuales</h3>
+		<p><a href="https://www.linkedin.com/in/joscani">José Luis Cañadas Reche</a></p>
+
+
+                <a href="#contacto" class="btn btn-circle page-scroll" style="border: 4px solid black !important;color:black"> <i class="fa fa-angle-double-down fa-inverse animated" style='color: black;'></i> </a>
+
+	    </div>
+        </div>
+    </section>
+
+
+    <!-- Contacto Section -->
+    <section id="contacto" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+    <h2>Contacto</h2>
+
+    <p>Puedes contactar por correo con el <a href="mailto:7jco@r-es.org">comité organizador</a> y el <a href="mailto:7jcc@r-es.org">científico</a>.
+                
+                <ul class="list-inline banner-social-buttons">
+                    <li> <a href="https://twitter.com/@R_Hisp" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a> </li>
+                </ul>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Map Section -->
+    <section id="mapa">
+    <div id="map"></div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        
+        <p>
+         Esta página ha sido desarrollada con la colaboración de Jorge Ayuso, Beatriz Martínez, Carlos J. Gil Bellosta, Inés Garmendia, Paula López y Óscar Perpiñán.
+	</p>
+	<p>
+        La foto de la portada se titula "<a href="https://www.flickr.com/photos/crisologo/6640358945/">Rio Tormes - Salamanca</a>". Tiene licencia <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/">CC</a> del usuario <a href="https://www.flickr.com/photos/crisologo/">crisologo de flickr</a>.
+        </p>        
+        
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    
+    <!-- Leaflet -->
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+    <script src="http://maps.google.com/maps/api/js?v=3.2&sensor=false"></script>
+    <script src="js/Google.js"></script>
+    
+    <script>  
+        
+        var map = L.map('map').setView([40.965444,-5.670472], 16);
+        
+        // add a marker in the given location, attach some popup content to it and open the popup
+	    // note that the street numbering is a bit odd: the actual entry is at the round part of the building (NE corner)
+        L.marker([40.965886, -5.669262]).addTo(map)
+            .bindPopup('VII Jornadas de Usuarios de R, esquina c/Fonseca y c/Ramón y Cajal')
+            .openPopup();    
+
+        map.scrollWheelZoom.disable();
+
+        // add Google layer
+        var googleLayer = new L.Google('ROADMAP');
+        map.addLayer(googleLayer);       
+        
+    </script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+
+</body>
+
+</html>
